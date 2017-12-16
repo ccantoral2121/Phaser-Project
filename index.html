@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+        <meta charset="utf-8">
+        <title>Rick The Chick</title>
+        <script src="libs/phaser.js"></script>
+        <script src="Boot.js"></script>
+        <script src="Level1.js"></script>
+        <script src="Level2.js"></script>
+
+        <script src="Menu.js"></script>
+        <style>
+
+            #game{
+                margin-left: 240px;
+                margin-top: 70px;
+            }
+
+            #background{
+                background-color: black;
+            }
+
+        </style>
+</head>
+        <body id="background">
+
+        <div id="game">
+                <script type="text/javascript">
+                        window.onload = function(){
+                            var game = new Phaser.Game(600,400,Phaser.AUTO,'game');
+                            game.state.add('Boot', RickTheChick.Boot);
+                            game.state.add('Menu', RickTheChick.Menu);
+                            game.state.add('Level1', RickTheChick.Level1);
+                            game.state.add('Level2', RickTheChick.Level2);
+                            game.state.start('Boot');
+                        }
+                </script>
+        </div>
+        </body>
+
+</html>
