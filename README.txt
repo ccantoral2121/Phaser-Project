@@ -1,6 +1,19 @@
 Rick The Chick 
 by Cristian Cantoral
 
+Controls ----
+
+left and right arrow keys
+Shift - hold to run faster
+Space Bar - shoot
+
+Maps ---- 
+
+Maps were created using TILED, to create a map
+1) create new map
+2) create new Tileset, embeded tileset (ground.png) name it Tileset
+3) create object layers as follow 'corn layer' and 'chest layer'
+4) create the map adding tilesets to the canvas
 
 The code implemented uses Phaser 2.8v and it's included in the file.
 The structure of the game is simple and it has in line comments that 
